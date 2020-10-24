@@ -34,7 +34,7 @@ for t in text_frag[:-1]:
     result += t.text
 result += f' {text_frag[-1].text}'
 
-time.sleep(4)
+time.sleep(3)
 
 print(result)
 
