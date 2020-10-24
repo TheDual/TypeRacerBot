@@ -22,7 +22,7 @@ for obj in practice:
         obj.click()
         break
 
-time.sleep(2)
+time.sleep(3)
 
 text = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'table.inputPanel')))
 text_frag = text.find_elements_by_tag_name('span')
@@ -33,9 +33,10 @@ for t in text_frag[:-1]:
     result += t.text
 result += f' {text_frag[-1].text}'
 
-time.sleep(3)
+time.sleep(4)
 
 print(result)
+
 
 input_field = driver.find_element_by_class_name('txtInput')
 pyautogui.write(result, interval=0.003)
