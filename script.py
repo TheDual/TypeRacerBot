@@ -37,7 +37,6 @@ time.sleep(3)
 
 print(result)
 
-
 input_field = driver.find_element_by_class_name('txtInput')
 pyautogui.write(result, interval=0.003)
 
